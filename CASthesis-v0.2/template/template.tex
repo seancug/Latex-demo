@@ -1,0 +1,147 @@
+%% Thesis Template of Chinese Academy of Sciences
+%%   for using CASthesis package with LaTeX2e
+%%
+%% Created by Ling-Yun Wu <aloft@ctex.org>
+%%
+%% $Id: template.tex,v 1.10 2007/01/09 05:10:46 aloft Exp $
+
+
+\documentclass[pdftex,notypeinfo]{CASthesis}
+% 可选参数：
+% notypeinfo 取消扉页的LaTeX版本信息
+%
+% 下面三个选一个：
+% dvipdfm 使用 dvipdfm(x) 生成最终的 PDF 文档 (缺省设置）
+% dvips 使用 dvips 生成最终的 PS 文档
+% pdftex 使用 pdfLaTeX 生成最终的 PDF 文档
+
+\usepackage{txfonts}
+
+% 设置图形文件的搜索路径
+\graphicspath{{chapter/}{figures/}}
+
+% 取消链接的颜色（黑白打印时）
+%\hypersetup{colorlinks=false}
+
+% 小节标题靠左对齐
+%\CTEXsetup[format+={\flushleft}]{section}
+\newcommand{\yihao}{\fontsize{28pt}{\baselineskip}\selectfont}
+\newlength{\titleblack}
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 封面部分
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%  % 中文封面内容
+%  \classification{}
+%  \confidential{}
+%  \UDC{}
+%  \serialnumber{}
+%  \title{各向异性介质和双相介质波动方程正演}
+%  \author{孙波}
+%  \advisor{顾汉明~博导}
+% % \advisorinstitute{中国地质大学（武汉）}
+%  \degree{硕士}
+%  \major{地球物理学}
+%  \submitdate{2012年8月}
+%  \defenddate{2012年8月}
+%  \institute{中国地质大学（武汉}
+%  \school{中国地质大学（武汉）}
+%  \chairman{}
+%
+%  % 英文封面内容
+%  \englishtitle{\LaTeX{} Thesis Template \\ of \\ Chinese Academy of Sciences}
+%  \englishauthor{Ling-Yun Wu}
+%  \englishadvisor{Prof. Xiang-Sun Zhang}
+%  \englishinstitute{Institute of Applied Mathematics \\
+%    Academy of Mathematics and Systems Science \\
+%    Chinese Academy of Sciences}
+%  \englishdegree{Ph.D.}
+%  \englishmajor{Operations Research}
+%
+%
+%  % 封面
+%  \maketitle
+%
+%  % 英文封面
+%  \makeenglishtitle
+\begin{titlepage}
+\begin{center}
+\includegraphics[height=4.4cm,width=4.45cm]{PG.jpg}\\
+\vspace{14mm}
+{\heiti\zihao{1}本科毕业论文~(设计)}\\
+\linespread{2.2}\vspace{26mm}\songti\zihao{4}
+题目：\uline{\hfill各向异性介质和双相介质波动方程正演\hfill}\par
+\settowidth{\titleblack}{题目：}\hspace{\titleblack}\uline{\hfill}\par
+\vspace{12mm}
+\settowidth{\titleblack}{指导教师：}\makebox[\titleblack][s]{姓\hfill名：}\uline{\makebox[45mm]{孙\quad波}}\hfill
+学号：\uline{\makebox[45mm]{20091002883}}\par
+\makebox[\titleblack][s]{院\hfill(系)：}\uline{\makebox[45mm]{地空学院}}\hfill
+专业：\uline{\makebox[45mm]{地球物理}}\par
+\makebox[\titleblack][s]{指导教师：}\uline{\makebox[45mm]{严\quad哲}}\hfill
+职称：\uline{\makebox[45mm]{讲师}}\par
+\makebox[\titleblack][s]{评\hfil阅\hfil人：}\uline{\makebox[45mm]{顾汉明}}\hfill
+职称：\uline{\makebox[45mm]{教授}}\par 
+\vspace{12mm}
+\settowidth{\titleblack}{~2013~}
+\uline{\makebox[\titleblack]{2013}}年\uline{\makebox[\titleblack]{6}}月 
+\end{center}
+\end{titlepage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 前言部分
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frontmatter
+
+  % 摘要
+  \include{chapter/abstract}
+
+  % 目录
+  \tableofcontents
+  % 表格目录
+  \listoftables
+  % 插图目录
+  \listoffigures
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 正文部分
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mainmatter
+
+  \include{chapter/chap-intro}
+  \include{chapter/chap-math}
+  \include{chapter/chap-tabfig}
+  \include{chapter/chap-faq}
+
+  % 附录
+  \appendix
+
+  \include{chapter/chap-req}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 附件部分
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\backmatter
+
+  % 参考文献
+  % 使用 BibTeX
+  \bibliography{bib/tex}
+  \nocite{*}
+  % 不使用 BibTeX
+  % \include{chapter/bib}
+
+  % 发表文章目录
+  \include{chapter/pub}
+
+  % 个人简历
+  \include{chapter/resume}
+
+  % 致谢
+  \include{chapter/thanks}
+
+
+\end{document}

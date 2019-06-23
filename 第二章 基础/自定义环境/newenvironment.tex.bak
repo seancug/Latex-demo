@@ -1,0 +1,8 @@
+\documentclass{book}
+\usepackage{ctex}
+\newenvironment{Proof}{{\noindent\em Proof}\par}{\hfill $\diamondsuit$\par}
+\begin{document}
+\begin{Proof}
+The idea ... completes the proof.
+\end{Proof}
+\end{document}

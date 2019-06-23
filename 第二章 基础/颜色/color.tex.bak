@@ -1,0 +1,17 @@
+\documentclass{book}
+\usepackage{xcolor}
+\usepackage{ctex}
+\begin{document}
+\color{blue} 文本颜色为蓝色\\
+\color[rgb]{1,0,1}\rule{6cm}{1pt}
+\par
+\textcolor{green!15!blue!95}{文本颜色}
+\par
+\colorbox{green!35!blue!75}{文本元素颜色设置}
+\colorbox{orange}{
+    \begin{tabular}{|c|c|}\hline
+    123 & 458 \\
+    316 & 795 \\ \hline
+    \end{tabular}
+}
+\end{document}

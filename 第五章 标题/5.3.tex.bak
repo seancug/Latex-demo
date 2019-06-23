@@ -1,0 +1,14 @@
+\documentclass[11pt,a4paper,openany]{book}
+\usepackage[space]{ctex}
+\usepackage{ulem}
+\renewcommand{\rmdefault}{ptm} \renewcommand{\sfdefault}{phv}  
+\begin{document}
+\begin{titlepage}
+\begin{center}
+分 类 号：U491 \hfill \newlength{\mycode} \settowidth{\mycode}{学\qquad 号：20091002883} \begin{minipage}[t]{\mycode}
+单位代号：UT8\\ 学\qquad号：20091002883\\  \end{minipage}
+
+
+\end{center}
+\end{titlepage}
+\end{document} 

@@ -1,0 +1,81 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.26)  1 MAR 2014 14:46
+entering extended mode
+**5.7.tex
+("E:\Project\Latex learning\第五章 标题\5.7.tex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for loaded.
+("D:\program files\CTEX\MiKTeX\tex\latex\base\book.cls"
+Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
+("D:\program files\CTEX\MiKTeX\tex\latex\base\bk10.clo"
+File: bk10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("D:\program files\CTEX\MiKTeX\tex\latex\titlesec\titlesec.sty"
+Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
+\ttl@box=\box26
+\beforetitleunit=\skip43
+\aftertitleunit=\skip44
+\ttl@plus=\dimen103
+\ttl@minus=\dimen104
+\ttl@toksa=\toks14
+\titlewidth=\dimen105
+\titlewidthlast=\dimen106
+\titlewidthfirst=\dimen107
+)
+("E:\Project\Latex learning\第五章 标题\5.7.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+
+Chapter 4.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 8.
+("D:\program files\CTEX\MiKTeX\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 8.
+ [1
+
+
+{D:/program files/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}
+}]
+("E:\Project\Latex learning\第五章 标题\5.7.aux") ) 
+Here is how much of TeX's memory you used:
+ 509 strings out of 495354
+ 6223 string characters out of 3183075
+ 53418 words of memory out of 3000000
+ 3752 multiletter control sequences out of 15000+200000
+ 4203 words of font info for 16 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 29i,4n,48p,154b,189s stack positions out of 5000i,500n,10000p,200000b,50000s
+<D:/program files/CTEX/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><D:/program files/CTEX/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/program files/CTEX/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmr10.pfb>
+Output written on 5.7.pdf (1 page, 26564 bytes).
+PDF statistics:
+ 18 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

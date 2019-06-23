@@ -1,0 +1,11 @@
+\documentclass{book}
+\usepackage[paperheight=210mm,paperwidth=185mm,text={148mm,210mm},top=-30mm,hmarginratio=1:1,vmarginratio=1:1,includehead]{geometry} %Page set
+\usepackage[space]{ctex}
+\renewcommand{\rmdefault}{ptm}
+\begin{document}
+\title{%
+\vspace{-30mm}\heiti\huge
+ 数字信号的接收与处理 \vspace{9mm}
+}
+\maketitle
+\end{document}

@@ -1,0 +1,16 @@
+\documentclass{book}
+\usepackage{ctex}
+\newenvironment{Proof}{{\noindent\em Proof}\par}{\hfill $\diamondsuit$\par}
+\newcounter{Exam}[chapter]
+\renewcommand{\theExam}{\thechapter.\arabic{Exam}}
+\newenvironment{Example}
+{{\noindent\sc Example \stepcounter{Exam}\theExam}
+\\[-2ex]\rule{\linewidth}{0.8pt}\\}{\nopagebreak\\*\rule{\linewidth}{0.8pt}}
+\begin{document}
+\begin{Proof}
+The idea ... completes the proof.
+\end{Proof}
+\begin{Example}
+Suppose a set of data points... 
+\end{Example}
+\end{document}

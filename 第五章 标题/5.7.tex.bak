@@ -1,0 +1,7 @@
+\documentclass{book}
+\usepackage{titlesec}
+\titleformat{\chapter}{\titlerule[1pt]\vspace{1pt}\titlerule\vspace{9pt}\bf}
+{\thechapter}{1em}{}[\vspace{6pt}{\titlerule*[3pt]{\textperiodcentered}}]
+\begin{document}
+\chapter{China}
+\begin{document}

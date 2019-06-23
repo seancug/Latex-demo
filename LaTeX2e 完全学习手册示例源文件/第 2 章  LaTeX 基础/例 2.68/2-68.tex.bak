@@ -1,0 +1,11 @@
+\documentclass{book}
+\usepackage{geometry}
+\usepackage{ifthen,calc,bbding}
+\begin{document}
+\parindent=0pt
+\newlength{\Scissors} \settowidth{\Scissors}{\ScissorLeft}
+\whiledo{\lengthtest{%
+\linewidth>\Scissors}}{%
+\setlength{\linewidth}{%
+\linewidth-\Scissors-1mm} \ScissorLeft}
+\end{document}

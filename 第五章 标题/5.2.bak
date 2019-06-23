@@ -1,0 +1,18 @@
+\documentclass{book}
+\usepackage[space]{ctex}
+\renewcommand{\rmdefault}{ptm}
+\begin{document}
+\begin{titlepage}
+\vspace*{10mm}
+\begin{center}
+{\heiti\huge 数字信号的接收与处理}\\30mm
+{\Large 张国华\footnote{博士、教授、博导}}\\[5mm]
+中国地质大学\\
+\texttt{872379603@qq.com}\\[9mm]
+{\Large 李志强}\\[5mm]
+中国石油大学\\
+\texttt{sean@hotmail.com}\\[15mm]
+2014.2.27
+\end{center}
+\end{titlepage}
+\end{document}

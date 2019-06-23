@@ -1,0 +1,29 @@
+\documentclass[a4paper,11pt]{book}
+%\documentclass[dvipdfm]{CASthesis}
+\usepackage[space]{ctex}
+\usepackage{calc}
+\usepackage{bbding}
+\usepackage{ifthen}
+\usepackage{geometry}
+
+\begin{document}
+\newcounter{Mycounter}
+\setcounter{Mycounter}{2}
+计数器的初始值是2，
+\setcounter{Mycounter}{(\value{Mycounter}+5)*2}
+加5，乘以2之后的值是\theMycounter 。
+
+\newlength{\len} \setlength{\len}{2pt plus 2pt minus 2pt}
+\the\len \par
+\setlength{\len}{\len/2}
+\the\len \par
+\setlength{\len}{\len*3}
+\the\len \par
+\parindent=0pt
+\newlength{\scissors} \settowidth{\scissors}{\ScissorLeft}
+\whiledo{\lengthtest{\linewidth > \scissors}}
+{
+    \setlength{\linewidth}{\linewidth - \scissors}
+    \ScissorLeft
+}
+\end{document}

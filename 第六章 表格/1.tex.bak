@@ -1,0 +1,80 @@
+\documentclass{book}
+\usepackage[space]{ctex}
+\usepackage{array}
+\usepackage{comment}
+\renewcommand{\rmdefault}{ptm}
+\begin{document}
+\begin{tabbing}
+  {\heiti项目}\hspace{4mm} \= {\sf802.11b}\hspace{4mm}
+  \= {\heiti 蓝牙}\hspace{10mm} \= {\sf HomeRF}\\
+  频率 \> 2.4GZ \> 2.4GZ \> 2.4GZ\\
+  技术 \> DSS \> DFS \> ASS
+\end{tabbing}
+\par\par
+\begin{tabbing}
+  夸克quark \hspace{5mm} \= 介子meson\\
+  \> 重子baryon \= nucleon \+\+\\
+  超子hyperon \-\\
+  轻子 \> 强子\\
+  \< 量子 \> 光子 \> 胶子 \\
+  引力子 \> 重子\\
+
+\end{tabbing}
+
+\begin{tabbing}
+  程序\quad \= : \= \TeX \\
+  开发者 \> : \> sean \\
+  教材 \> : \\
+  \pushtabs
+  \quad \= \hspace{33mm} \= \hspace{30mm} \kill
+  \>{\kaishu 书名}   \> {\kaishu 出版社}\\
+  \> the \TeX book   \>Addison-Wesely\\
+  \poptabs
+  网址 \> : \> seancug@hotmail.com\\
+\end{tabbing}
+
+\newcommand{\bb}[1]{\raisebox{-7ex}[0pt][0pt]{\shortstack{#1}}}
+\newcounter{numbercot}
+\newcommand{\rown}{\stepcounter{numbercot} \thenumbercot}
+
+\newcolumntype{Y}{|c|c|c|c|}
+\begin{tabular}{Y}\hline
+  \multicolumn{4}{|c|}{\parbox[c][9mm]{0pt}{} \kaishu 前五种化学元素的电子状态分布}\\ \hline
+  \bb{原子 \\ 序数} & \bb{元素 \\ 符号} & \multicolumn{2}{c|}{各电子层上的电子数}\\ \cline{3-4}
+  & & K层,$n=1$ & L层,$n=2$ \\ \cline{3-4}
+  & & $s$亚层 & $s$亚层, $p$亚层\\
+  & & l=0 & l=0 l=1 \\ \hline
+  1 & H & 1 & 1 \\ \hline
+  \rown & \rown & \rown & \rown \\ \hline
+\end{tabular}
+
+\vspace{10mm}
+表一
+\begin{tabular}[t]{|c|} \firsthline
+  11\\
+  22\\ \lasthline
+\end{tabular}
+表二
+\begin{tabular}[c]{|c|}\hline
+  11\\
+  22\\ \hline
+\end{tabular}
+表三
+\begin{tabular}[b]{|c|}\hline
+  11\\
+  22\\ \hline
+\end{tabular}
+
+\begin{tabular}{|c|c|}\hline
+11 & \begin{tabular}[t]{|c|c|}\firsthline
+        22 & 33 \\ \hline
+        44 & 55 \\ \lasthline
+     \end{tabular}\\ \hline
+\end{tabular}
+
+\newcolumntype{M}{|>{\kaishu}p{35mm}|>{\bf\centering\arraybackslash}p{15mm}|}
+\begin{tabular}{M}\hline
+  哈勃望远镜 & HST \\
+  天文台 & CXRO \\ \hline
+\end{tabular}
+\end{document}

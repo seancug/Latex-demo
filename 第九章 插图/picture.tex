@@ -1,0 +1,19 @@
+\documentclass{book}
+\usepackage{ctexcap}
+\usepackage[labelfont=bf,labelsep=quad]{caption}
+
+  \usepackage{graphicx}
+
+\begin{document}
+  这张图 \includegraphics[origin=lt,angle=-90]{graphics.pdf} 是pdf格式。\par
+  这张图是PDF格式。
+  \begin{figure}[!ht]
+  \centering
+  \includegraphics{graphics.pdf}
+  \caption{插图图片}
+  \end{figure}
+  \begin{center}
+  \Huge\bf\makebox[0pt][l]{\scalebox{1}[-1]{\color[gray]{0.7}{Hello Word}}}%
+  Hello Word
+  \end{center}
+\end{document}

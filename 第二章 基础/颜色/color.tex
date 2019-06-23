@@ -1,0 +1,38 @@
+\documentclass{book}
+\usepackage{xcolor}
+\usepackage{ctex}
+\begin{document}
+\color{blue} 文本颜色为蓝色\\
+\color[rgb]{1,0,1}\rule{6cm}{1pt}
+\par
+\textcolor{green!15!blue!95}{文本颜色}
+\par
+\colorbox{green!35!blue!75}{文本元素颜色设置}
+\colorbox{orange}{
+    \begin{tabular}{|c|c|}\hline
+    123 & 458 \\
+    316 & 795 \\ \hline
+    \end{tabular}
+}
+\par
+\fboxrule = 1pt
+\fcolorbox{blue}{green!35!blue!75}{文本元素颜色设置}
+\fcolorbox{blue}{orange}{
+    \begin{tabular}{|c|c|}\hline
+    123 & 458 \\
+    316 & 795 \\ \hline
+    \end{tabular}
+}
+\\[9pt]
+\definecolorseries{mycolor}{rgb}{last}{red}{yellow}
+\resetcolorseries[5]{mycolor}
+\newcommand{\M}{\rule{6mm}{0pt}\rule{0pt}{2mm}}
+\newcommand{\R}{\colorbox{mycolor!!+}{\M}}
+\R\R\R\R\R\R\\[9pt]
+\resetcolorseries[5]{mycolor}
+\color{mycolor!!+}AA,
+\color{mycolor!!+}AA,
+\color{mycolor!!+}AA,
+\color{mycolor!!+}AA,
+\color{mycolor!!+}AA,\\[9pt]
+\end{document}

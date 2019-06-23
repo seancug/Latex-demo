@@ -1,0 +1,45 @@
+\documentclass{book}
+\usepackage[space]{ctex}
+\usepackage{fancyvrb}
+\begin{document}
+\VerbatimFootnotes
+脚注命令\footnote{\verb"\footnote"} 中也可使用抄录命令。
+脚注命令\footnote{\verb"\footnote"} 中也可使用抄录命令。
+\begin{quotation}
+黑洞是恒星的一种残骸，它
+ 是引力收缩的极点，极端近乎荒唐。\par
+\raggedleft--约翰$\cdot$卢米涅
+\end{quotation}
+
+\makeatletter
+\renewcommand{\verbatim@font}{\sffamily\slshape\small}
+\makeatother
+\begin{verbatim}
+REAL FUNCTION TRIPPLE(NUM)
+IMPLICTT NONE
+         REAL NUM
+         TRIOOLE = NUM * 3
+         RETURN
+END
+\end{verbatim}
+\begin{Verbatim}[fontfamily=rm,baselinestretch=1.1]
+REAL FUNCTION TRIPPLE(NUM)
+IMPLICTT NONE
+         REAL NUM
+         TRIOOLE = NUM * 3
+         RETURN
+END
+\end{Verbatim}
+\begin{Verbatim}[numbers=left,commandchars=\\\{\}]
+REAL FUNCTION TRIPPLE(NUM)
+IMPLICTT NONE
+         REAL NUM 
+         TRIOOLE = NUM * 3 
+         RETURN \label{verb:txt}
+END
+\end{Verbatim}
+\par
+上例中第 \ref{verb:txt} 行语句\\ 是返回主程序的值
+\par
+
+\end{document}

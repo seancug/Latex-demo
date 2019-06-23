@@ -1,0 +1,11 @@
+\documentclass[11pt,twoside,twocolumnl,a4paper]{book}   %使用book文档类型排版
+\usepackage{amsmath}   %调用公式宏包
+\usepackage{graphicx}  %调用插图宏包
+\usepackage[space]{ctex}
+\newcommand{\mycmdA}[1]{{\heiti #1}}
+
+\begin{document}     %开始
+\LaTeX3 开始学习
+方程式有两种 \mycmdA{恒等式}和\mycmdA{不等式}
+\end{document}     %结束;
+\pm\times

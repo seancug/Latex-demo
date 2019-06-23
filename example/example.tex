@@ -1,0 +1,61 @@
+\documentclass[a4paper, 11pt]{book}   %使用book 文档类型排版
+\usepackage{amsmath}   %调用公式宏包
+\usepackage{graphicx}  %调用插图宏包
+\usepackage[space]{xeCJK} %中文支持宏包
+\newcommand{\mycmdA}[1]{{\heiti #1}}%定义新命令
+\begin{document}     %开始
+\LaTeX3 开始学习 This is m~e
+方程式有两种 \mycmdA{恒等式}和\mycmdA{不等式}\par %新命令使用
+\label{text1}
+A\hspace{\stretch{1}B\hspace{\stretch{3}C}} %等比将字排开
+\\
+{
+    \parindent=0pt %首行缩进
+    \framebox[60mm][l]{left \hspace{\fill} right}\\
+    \framebox[60mm][l]{left \hspace{1.5\fill} right}\\
+    \framebox[60mm][l]{left \mbox{} right}\\
+    \framebox[60mm][l]{left right}
+}%花括号里的代码主要说明弹性长度消失
+\par \the\parindent \par A\hspace{\stretch{1}B\hspace{\stretch{3}C}} %显示首行长度
+\par
+{
+    \parindent=0pt
+    \makebox[60mm][s]{地球物理学} %makebox使用
+}
+\par
+For emphasis, you may wish to \raisebox{1em}{raise} or \raisebox{-1em}{lower} certain text inside your document.
+%raisebox强调单词
+\par
+\noindent \makebox[0pt][r]{\fbox{Warning}}\qquad 如果执意要继续执行，系统会出错。%零长度盒子使用
+\par $$a^{2}+b^{2}=c^{2}$$
+$$a^{2}+b^{2}=c^{2}\makebox{~勾股定理}$$使用
+$$a^{2}+b^{2}=c^{2}\makebox[0pt][l]{~勾股定理}$$ %零长度盒子公式居中
+\par
+\noindent \hfill 分 类 号: U491 ~~~
+\newlength{\Mycode}
+\settowidth{\Mycode}{学\qquad号: S200000}
+\begin{minipage}[c]{\Mycode}
+单位代码： 10000\\ 学\qquad 号:S200000\\
+密\qquad 级: 公开
+\end{minipage} %段落盒子制作使用
+\par
+\noindent 楞次定律：
+\parbox[t]{43mm}{\sl 磁通变化感生的电流的方向是在它能阻止磁通变化的方向上。} %段落盒子使用
+\par
+磁通变化感生的电流的方向是在它能阻止磁通变化的方向上。
+\par
+\CJKindent
+磁通变化感生的电流的方向是在它能阻止磁通变化的方向上。
+\par
+\noindent
+\makebox[0pt][l]{\color{blue}\rule[-0.5em]{80mm}{1.5pt}} %黑盒子例子
+磁通变化感生的电流的方向是在它能阻止磁通变化的方向上
+\par
+\newsavebox{\Mysquare}
+\sbox{\Mysquare}{\fboxrule=1pt \framebox{\rule{7mm}{0pt}\rule{0pt}{7mm}}}
+\usebox{\Mysquare}\usebox{\Mysquare} %自定义盒子
+\ref{text1}
+\par
+\pageref{text1}
+\par
+\end{document}     %结束;
